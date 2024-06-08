@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+
+    <!--three different shades of black color-->
+    <color name="black_shade_1">#292D36</color>
+    <color name="black_shade_2">#272B33</color>
+    <color name="black_shade_3">#22252D</color>
+    <color name="gray_shade_3">#F1F1F1</color>
+    <color name="white_shade_1">#F8F8F8</color>
+    <color name="gray_shade_1">#818080</color>
+    <color name="yellow">#ffa500</color>
+    <color name="pink">#FF367A</color>
+    <color name="pink_shade_2">#FF6FA0</color>
+    <color name="pink_shade_3">#FF36BC</color>
+
+    <color name="whiteSmoke">#f6f6f6</color>
+
+</resources>

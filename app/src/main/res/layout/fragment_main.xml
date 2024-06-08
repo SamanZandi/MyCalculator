@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/txtResult"
+            android:layout_alignParentTop="true"
+            android:scrollbarSize="@dimen/_10mdp">
+
+            <!--Text Views-->
+            <!--Calculation-->
+            <TextView
+                android:id="@+id/txtCalculation"
+                style="@style/CalculationStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_30mdp"
+                android:scrollbars="vertical"
+                android:scrollbarStyle="insideOverlay"
+                android:overScrollMode="ifContentScrolls"
+                android:fadeScrollbars="false"
+                android:textAlignment="textEnd"
+                android:maxLines="2"
+                tools:text="@string/_0_0" />
+
+        </ScrollView>
+
+
+        <!--Show Result-->
+        <TextView
+            android:id="@+id/txtResult"
+            style="@style/ResultStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/relativeLyIcons"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            tools:text="@string/_0_0" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLyIcons"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60mdp"
+
+            android:layout_above="@id/cardView">
+
+            <ImageView
+                android:id="@+id/btnTheme"
+                style="@style/IconImage"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/moon_fill_icon" />
+
+            <ImageView
+                android:id="@+id/btnHistory"
+                style="@style/IconImage"
+                android:src="@drawable/history_"
+                android:layout_toEndOf="@id/btnTheme"/>
+
+            <ImageView
+                android:id="@+id/btnBackSpace"
+                style="@style/IconImage"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/baseline_backspace_24" />
+
+
+        </RelativeLayout>
+
+
+        <!--Buttons-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/gray_shade_3"
+            app:cardCornerRadius="@dimen/_15mdp"
+            app:cardElevation="@dimen/_11mdp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnAc"
+                            style="@style/DigitButton"
+                            android:text="@string/ac"
+                            android:textColor="@color/pink" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnOpenBracket"
+                            style="@style/DigitButton"
+                            android:text="@string/OpenBracket" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnCloseBracket"
+                            style="@style/DigitButton"
+                            android:text="@string/CloseBracket" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPercent"
+                            style="@style/DigitButton"
+                            android:textColor="@color/yellow"
+                            android:text="@string/percent" />
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn7"
+                            android:backgroundTint="@color/white"
+                            style="@style/DigitButton"
+                            android:text="@string/_7" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn8"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/_8" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn9"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/_9" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDivide"
+                            style="@style/OperatorButton"
+                            android:text="@string/divide"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn4"
+                            android:backgroundTint="@color/white"
+                            style="@style/DigitButton"
+                            android:text="@string/_4" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn5"
+                            android:backgroundTint="@color/white"
+                            style="@style/DigitButton"
+                            android:text="@string/_5" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn6"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/_6" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnMultiply"
+                            style="@style/OperatorButton"
+                            android:text="@string/multiply"/>
+
+                    </TableRow>
+
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn1"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/_1" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn2"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/_2" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn3"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/_3" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPlus"
+                            style="@style/OperatorButton"
+                            android:text="@string/sum" />
+
+                    </TableRow>
+
+
+                    <TableRow
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnPNSign"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/pnSign" />
+
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn0"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/_0" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDot"
+                            style="@style/DigitButton"
+                            android:backgroundTint="@color/white"
+                            android:text="@string/dot" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnSubtract"
+                            style="@style/OperatorButton"
+                            android:text="@string/subtract" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnEqual"
+                            style="@style/OperatorButton"
+                            android:textSize="@dimen/_24font_mdp"
+                           android:text="@string/equal" />
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

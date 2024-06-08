@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Scientific Calculator</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_7">7</string>
+    <string name="_4">4</string>
+    <string name="_1">1</string>
+    <string name="ac">AC</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_0">0</string>
+    <string name="dot">.</string>
+    <string name="EqualSign">=</string>
+    <string name="OpenBracket">(</string>
+    <string name="CloseBracket">)</string>
+    <string name="modSign">%</string>
+    <string name="divideSign">/</string>
+    <string name="multiplySign">*</string>
+    <string name="plusSign">+</string>
+    <string name="subtractSign">-</string>
+    <string name="pnSign">+/-</string>
+    <string name="_0_0">0.0</string>
+    <string name="percentIcon">%</string>
+    <string name="absSign">|x|</string>
+    <string name="eSign">e</string>
+    <string name="pow2Sign">x^2</string>
+    <string name="cos">cos</string>
+    <string name="cosh">cosh</string>
+    <string name="acosh">acosh</string>
+    <string name="sin">sin</string>
+    <string name="sinh">sinh</string>
+    <string name="asinh">asinh</string>
+    <string name="tan">tan</string>
+    <string name="tanh">tanh</string>
+    <string name="atanh">atanh</string>
+    <string name="logarithm">log</string>
+    <string name="_1_x">1/x</string>
+    <string name="factSign">x!</string>
+    <string name="ln">ln</string>
+    <string name="x_y">x^y</string>
+    <string name="percent">%</string>
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="sum">+</string>
+    <string name="subtract">-</string>
+    <string name="equal">=</string>
+    <string name="piSign">π</string>
+    <string name="sqrt">√</string>
+    <string name="x2">x²</string>
+    <string name="secondx">2^x</string>
+    <string name="clear_all">Clear All</string>
+    <string name="rad">Rad</string>
+    <string name="cbrt">∛</string>
+    <string name="asin">asin</string>
+    <string name="acos">acos</string>
+    <string name="atan">atan</string>
+    <string name="ex">eˣ</string>
+    <string name="version">version 1.0</string>
+    <string name="scientific_calculator">Scientific Calculator</string>
+
+</resources>

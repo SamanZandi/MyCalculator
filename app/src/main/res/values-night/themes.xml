@@ -1,0 +1,165 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyCalculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:statusBarColor">@color/yellow</item>
+    </style>
+
+    <style name="Base.Theme.MyCalculator.Dark" parent="Theme.AppCompat"/>
+
+    <!--item history-->
+    <style name="cardViewHistory" parent="CardView">
+        <item name="cardBackgroundColor">@color/black_shade_2</item>
+    </style>
+
+    <!--Recycler-->
+    <style name="RecyclerView1" >
+        <item name="background">@color/black_shade_1</item>
+    </style>
+
+    <!--cardview-->
+    <style name="cardView" parent="CardView.Light">
+        <item name="cardBackgroundColor">@color/black</item>
+        <item name="cardCornerRadius">@dimen/_15mdp</item>
+        <item name="cardElevation"> @dimen/_11mdp</item>
+    </style>
+
+
+    <!--TextView Result-->
+    <style name="ResultStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">@dimen/_25font_mdp</item>
+        <item name="android:textColor">@color/white_shade_1</item>
+        <item name="android:padding">@dimen/_20mdp</item>
+        <item name="backgroundTint">@color/black_shade_1</item>
+
+    </style>
+
+    <!--TextView Calculation-->
+    <style name="CalculationStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:padding">@dimen/_15mdp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">@dimen/_20font_mdp</item>
+        <item name="android:textColor">@color/white_shade_1</item>
+        <item name="backgroundTint">@color/black_shade_1</item>
+    </style>
+
+    <!--Buttons-->
+    <style name="DigitButton">
+        <item name="android:layout_height">@dimen/_70mdp</item>
+        <item name="android:layout_width">@dimen/_70mdp</item>
+        <item name="backgroundTint">@color/black_shade_1</item>
+        <item name="android:padding">@dimen/_10mdp</item>
+        <item name="android:layout_margin">@dimen/_3mdp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_16font_mdp</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!--Operator Buttons-->
+    <style name="OperatorButton">
+        <item name="android:layout_height">@dimen/_70mdp</item>
+        <item name="android:layout_width">@dimen/_70mdp</item>
+        <item name="backgroundTint">@color/yellow</item>
+        <item name="android:padding">@dimen/_10mdp</item>
+        <item name="android:layout_margin">@dimen/_3mdp</item>
+        <item name="android:textSize">@dimen/_16font_mdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">4</item>
+        <item name="cornerRadius">@dimen/_40mdp</item>
+    </style>
+
+
+
+    <!--Equal Buttons-->
+    <style name="EqualButton">
+        <item name="android:layout_height">@dimen/_40mdp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="backgroundTint">@color/yellow</item>
+        <item name="android:layout_margin">@dimen/_3mdp</item>
+        <item name="android:textSize">@dimen/_16font_mdp</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">@dimen/_25mdp</item>
+        <item name="iconTint">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="cornerRadius">@dimen/_20mdp</item>
+    </style>
+
+    <!--Icon Image-->
+    <style name="IconImage">
+        <item name="android:layout_width">@dimen/_25mdp</item>
+        <item name="android:layout_height">@dimen/_25mdp</item>
+        <item name="android:layout_marginBottom">@dimen/_10mdp</item>
+        <item name="android:layout_marginStart">@dimen/_10mdp</item>
+        <item name="android:layout_marginEnd">@dimen/_20mdp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="tint">@color/yellow</item>
+    </style>
+
+
+
+    <!--landscape styles-->
+
+    <!--Buttons-->
+    <style name="SmallDigitButton">
+        <item name="android:layout_height">@dimen/_35mdp</item>
+        <item name="android:layout_width">@dimen/_80mdp</item>
+        <item name="backgroundTint">@color/black_shade_1</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_12font_mdp</item>
+        <item name="android:layout_weight">7</item>
+        <item name="cornerRadius">@dimen/_15mdp</item>
+        <item name="android:layout_marginStart">@dimen/_15mdp</item>
+
+
+    </style>
+
+    <!--Operator Buttons-->
+    <style name="SmallOperatorButton">
+        <item name="android:layout_height">@dimen/_35mdp</item>
+        <item name="android:layout_width">@dimen/_80mdp</item>
+        <item name="backgroundTint">@color/yellow</item>
+        <item name="android:textSize">@dimen/_12font_mdp</item>
+        <item name="android:layout_weight">7</item>
+        <item name="cornerRadius">@dimen/_15mdp</item>
+        <item name="android:layout_marginStart">@dimen/_15mdp</item>
+        <item name="android:layout_marginEnd">@dimen/_15mdp</item>
+
+    </style>
+
+
+    <!--TextView Result-->
+    <style name="LandResultStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">@dimen/_15font_mdp</item>
+        <item name="android:textColor">@color/white_shade_1</item>
+        <item name="android:padding">@dimen/_20mdp</item>
+        <item name="backgroundTint">@color/black_shade_1</item>
+    </style>
+
+    <!--TextView Calculation-->
+    <style name="LandCalculationStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:padding">@dimen/_14mdp</item>
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">@dimen/_16font_mdp</item>
+        <item name="android:textColor">@color/white_shade_1</item>
+        <item name="backgroundTint">@color/black_shade_1</item>
+
+    </style>
+
+    <!--Icon Image-->
+
+    <style name="SmallIconImage">
+        <item name="android:layout_width">@dimen/_20mdp</item>
+        <item name="android:layout_height">@dimen/_20mdp</item>
+        <item name="android:layout_marginBottom">@dimen/_10mdp</item>
+        <item name="android:layout_marginStart">@dimen/_10mdp</item>
+        <item name="android:layout_marginEnd">@dimen/_20mdp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="tint">@color/yellow</item>
+    </style>
+
+
+</resources>
