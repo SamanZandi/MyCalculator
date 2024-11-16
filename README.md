@@ -1,9 +1,9 @@
 #Description
-a scientific calculator with beautiful theme.
-support trigonometric functions
-support portrait and landscape screen
-support light and dark theme
-show history of calculation
+![Description]a scientific calculator with beautiful theme.
+![Description]support trigonometric functions
+![Description]support portrait and landscape screen
+![Description]support light and dark theme
+![Description]show history of calculation
 
 
 
